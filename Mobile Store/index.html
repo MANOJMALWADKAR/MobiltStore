@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!--Glidejs Carousel-->
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <script src="js/glide.min.js"></script>
+
+    <!--Animate on scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Iphone Store</title>
+</head>
+
+<body>
+
+    <!--
+    //////////////    
+        Header
+    /////////////    
+    -->
+
+    <header class="header" id="header">
+        <!--Navigation-->
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <input type="checkbox" id="show-menu">
+                    <label for="show-menu" class="nav__humburger">
+                        <i class="fa fa-bars"></i>
+                    </label>
+
+                    <div class="nav__logo">
+                        <a href="/" class="scroll-link">PHONE</a>
+                    </div>
+
+                    <div class="nav__menu open">
+                        <div class="menu-top">
+                            <span class="nav__category">PHONE</span>
+                            <input type="checkbox" id="show-menu">
+                            <label for="show-menu" class="nav__humburger">
+                                <i class="fa fa-times"></i>
+                            </label>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#header" class="nav__link scroll__link">Home</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#Mobiles" class="nav__link scroll__link">Mobiles</a>
+                                <ul class="sub__menu">
+                                    <li class="sub__list"><a>Mi</a></li>
+                                    <li class="sub__list"><a>Realme</a></li>
+                                    <li class="sub__list"><a>Samsung</a></li>
+                                    <li class="sub__list"><a>Oppo</a></li>
+                                    <li class="sub__list"><a>Vivo</a></li>
+                                    <li class="sub__list"><a>Apple</a></li>
+                                    <li class="sub__list"><a>OnePlus</a></li>
+                                    <li class="sub__list"><a>Honor</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#new" class="nav__link scroll__link">Accessories</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#new" class="nav__link scroll__link">Blog</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link scroll__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__icons">
+                        <a href="#" class="icon__item">
+                            <i class="fas fa-user"></i>
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <i class="fa fa-search"></i>
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <span id="cart_total">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <!--Hero Area-->
+        <div class="hero">
+            <div class="glide" id="glide_1">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="hero__center">
+                                <div class="hero__left">
+                                    <span>New Inspiration 2022</span>
+                                    <h1>PHONE MADE FOR YOU</h1>
+                                    <p>Trending from mobile and headphone style collection</p>
+                                    <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                                </div>
+                                <div class="hero__right">
+                                    <div class="hero__img-container">
+                                        <img src="./images/Apple iPhone 13 (128GB ROM, MLPK3HNA, Blue).png" alt="iphone"
+                                            style="max-width: 80%;" class="banner-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="hero__center">
+                                <div class="hero__left">
+                                    <span>New Inspiration 2022</span>
+                                    <h1>PHONE MADE FOR YOU</h1>
+                                    <p>Trending from mobile and headphone style collection</p>
+                                    <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                                </div>
+                                <div class="hero__right">
+                                    <div class="hero__img-container">
+                                        <img src="./images/iPhone-11-128GB-Black-491901644-i-1-1200Wx1200H.png"
+                                            style="max-width: 80%;" alt="iphone" class="banner-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main id="main">
+        <!--collection-->
+        <section class="section collection" id="collection">
+            <div class="container">
+                <div class="collection__container">
+                    <div class="collection__box">
+                        <div class="img__container">
+                            <img src="./images/AirPods Max.jpg" alt="" class="collection_01">
+                        </div>
+                        <div class="collection__content">
+                            <div class="collection__data">
+                                <span>New Clors Itroduced</span>
+                                <h1>HEADPHONES</h1>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection__box">
+                        <div class="img__container">
+                            <img src="./images/apple-iphone-xr-mry62hn-a-original-imafa6zkhyceh8dg.jpeg" alt=""
+                                class="collection_02">
+                        </div>
+                        <div class="collection__content">
+                            <div class="collection__data">
+                                <span>Phone Device Preset</span>
+                                <h1>SMARTPHONES</h1>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--latest products-->
+        <div class="category">
+            <section class="section latest__products" id="latest">
+                <div class="title__container">
+                    <div class="section__title active" data-id="latest products">
+                        <span class="dot"></span>
+                        <h1 class="primary__title">Best Seller</h1>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="glide" id="glide_2">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides latest-center">
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/apple-iphone-xr-mry62hn-a-original-imafa6zkhyceh8dg.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Apple iphone 11</h3>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>$800</h4>
+                                                <a href="#">
+                                                    <button type="button" class="product__btn">
+                                                        Add To Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows-rotate"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/AirPods Max.jpg" alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Apple iphone 11</h3>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>$800</h4>
+                                                <a href="#">
+                                                    <button type="button" class="product__btn">
+                                                        Add To Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows-rotate"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/airbud 1.jpg" alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Apple iphone 11</h3>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>$800</h4>
+                                                <a href="#">
+                                                    <button type="button" class="product__btn">
+                                                        Add To Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows-rotate"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/Apple Watch Series 3.png" alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Apple iphone 11</h3>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>$800</h4>
+                                                <a href="#">
+                                                    <button type="button" class="product__btn">
+                                                        Add To Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows-rotate"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/ns6-s6-bluetooth-neckband-headset-with-sports-running-headphone-original-imaemjzdsungh2yw.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Apple iphone 11</h3>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>$800</h4>
+                                                <a href="#">
+                                                    <button type="button" class="product__btn">
+                                                        Add To Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows-rotate"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/iPhone 12  12 Pro Leather Sleeve with MagSafe - Baltic Blue.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Apple iphone 11</h3>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>$800</h4>
+                                                <a href="#">
+                                                    <button type="button" class="product__btn">
+                                                        Add To Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows-rotate"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="product">
+                                        <div class="product__header">
+                                            <img src="./images/iPhone Leather Wallet with MagSafe - Golden Brown.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <h3>Apple iphone 11</h3>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+
+                                            </div>
+                                            <div class="product__price">
+                                                <h4>$800</h4>
+                                                <a href="#">
+                                                    <button type="button" class="product__btn">
+                                                        Add To Cart
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <ul>
+
+                                                <a href="#">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows-rotate"></i>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Category List-->
+        <div class="category">
+            <div class="title__container">
+                <div class="section__title active" data-id="latest products">
+                    <span class="dot"></span>
+                    <h1 class="primary__title">Best Seller</h1>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="containers">
+                <img src="smartphone.png" alt="">
+                <div class="card">
+                    <span class="text">Mobiles</span>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="containers">
+                <img src="headphones.png" alt="">
+                <div class="card">
+                    <span class="text">Headphones</span>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="containers">
+                <img src="charger.png" alt="">
+                <div class="card">
+                    <span class="text">Chargers</span>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="containers">
+                <img src="cable.png" alt="">
+                <div class="card">
+                    <span class="text">Cables</span>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="containers">
+                <img src="smart-watch.png" alt="">
+                <div class="card">
+                    <span class="text">Smart Watches</span>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="containers">
+                <img src="tablet.png" alt="">
+                <div class="card">
+                    <span class="text">Tablets</span>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="containers">
+                <img src="camera-lens.png" alt="">
+                <div class="card">
+                    <span class="text">Lens </span>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="containers">
+                <img src="cogwheel.png" alt="">
+                <div class="card">
+                    <span class="text">Other</span>
+                    <button>See More</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+
+    <!--Glide JS-->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Script-->
+    <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>
